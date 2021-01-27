@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            width:300px;
+            background: grey;
+        }
+        table > thead{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>고객정보</h1>
+    <table>
+        <thead>
+            <tr><td colspan=><input type="color" name="color">
+            </td><td><input type="date" name="regdate"></td></tr>
+        </thead>
+        <tbody>
+        <form ction="usersapp"method = "get">
+            <tr><td>ID</td><td><input type="text" name="id"></td></tr>
+            <tr><td>PWD</td><td><input type="text" name="pwd"></td></tr>
+            <tr><td>name</td><td><input type="text" name="name"></td></tr>
+            <tr><td>age</td><td><input type="number" name="age"></td></tr>
+            <tr><td><input type="submit" value="저장"></td></tr>
+        </form>
+        </tbody>
+    </table>
+    <br/>
+    <a href='..'>이전으로</a>
+</body>
+</html>

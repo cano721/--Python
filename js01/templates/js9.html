@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function(){
+            setInterval(function(){
+                date = new Date();
+                str = date.getHours() +':' + date.getMinutes() + ':' + date.getSeconds();
+                document.querySelector('h1').innerHTML = str;
+            },1000);
+        };
+    </script>
+</head>
+<body>
+    <h1></h1>
+</body>
+</html>

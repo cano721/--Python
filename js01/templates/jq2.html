@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <style>
+        div{
+            width:300px;
+            height:300px;
+            background:yellow;
+            border: 2px solid red;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $('h1').click(function(){
+                alert('h1');
+                });
+            $('a').click(function(){
+                $('div').hide();
+                });
+            $('button').click(function(){
+                $('div').show();
+                });
+        });
+    </script>
+</head>
+<body>
+    <h1>Click1</h1>
+    <a href="#">Click2</a>
+    <button>Click3</button>
+    <div></div>
+</body>
+</html>

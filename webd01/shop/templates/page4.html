@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width:300px;
+            background:yellow;
+        }
+        table > thead > tr{
+            text-align: center;
+            background: black;
+            color: white;
+        }
+        table > tbody > tr > td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Test</h1>
+    <table>
+        <thead>
+            <tr><td>ID</td><td>PWD</td><td>NAME</td></tr>
+        </thead>
+        <tr><td>ID</td><td>PWD</td><td>NAME</td></tr>
+        <tbody>
+        <tr><td>id01</td><td>pwd01</td><td>james</td></tr>
+        <tr><td>id01</td><td>pwd01</td><td>james</td></tr>
+        <tr><td>id01</td><td>pwd01</td><td>james</td></tr>
+        <tr><td>id01</td><td>pwd01</td><td>james</td></tr>
+        <tr><td>id01</td><td>pwd01</td><td>james</td></tr>
+        </tbody>
+    </table>
+    <!-- Table 2 -->
+
+ <h1>Table Test</h1>
+    <table>
+        <caption>Caption Test</caption>
+        <thead>
+            <tr><td>ID</td><td>ID</td><td>ID</td></tr>
+        </thead>
+        <tbody>
+        <tr><td colspan="2">1</td><td>3</td></tr>
+        <tr><td>4</td><td rowspan="2">5</td><td>6</td></tr>
+        <tr><td>7</td><td>9</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

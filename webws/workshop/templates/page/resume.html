@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--
+rid=id01&rpwd=pwd01&rage=30&r1=cr1
+Query String
+-->
+
+<body>
+    <h1>자기소개서</h1>
+    <form action="register" method="get">
+        <fieldset>
+            <legend></legend>
+            <label for="name">이름</label><br>
+            <input type="text" name="lname" id="name" value=""><br>
+            <p>직업</p>
+            <label for="job1">공무원</label>
+            <input type="radio" name="r1" value="cr1" id="job1">
+            <label for="job2">회사원</label>
+            <input type="radio" name="r1" value="cr2" id="job2">
+            <label for="job3">학생</label>
+            <input type="radio" name="r1" value="cr3" id="job3">
+            <label for="job4">백수</label>
+            <input type="radio" name="r1" value="cr4" id="job4">
+
+            <p>취미</p>
+            <label for="h1">공부</label>
+            <input type="checkbox" name="c1" value="ch1" id="h1">
+            <label for="h2">운동</label>
+            <input type="checkbox" name="c1" value="ch2" id="h2">
+            <label for="h3">독서</label>
+            <input type="checkbox" name="c1" value="ch3" id="h3">
+            <label for="h4">운동</label>
+            <input type="checkbox" name="c1" value="ch4" id="h4">
+            <p>자기소개</p>
+            <textarea rows="10" cols="50" name="tt"></textarea>
+
+            <input type="hidden" name="loginid" value="user01" ><br>
+            <input type="submit" value="저장">
+            <input type="reset" value="지우기">
+        </fieldset>
+    </form>
+</body>
+</html>

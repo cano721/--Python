@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    window.onload = function(){
+        document.querySelector('h1').innerHTML = '<a href="">Click1</a>';
+        document.querySelector('h2').innerHTML = '<a href="">Click2</a>';
+        console.log('Start Web Page ......');
+    };
+    function click3(){
+        alert('clicked h3')
+    };
+    </script>
+</head>
+<body>
+    <h1>Header1</h1>
+    <h2>Header1</h2>
+    <h3 onclick="click3();">Header3</h3>
+</body>
+</html>

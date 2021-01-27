@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/test01.css'%}">
+    <style>
+        a{
+            text-decoration:none;
+            color:black;
+        }
+        h3 > a{
+            background:red;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Test 01</h1>
+    <h1 class="cc">CSS Test 01</h1>
+    <h2 class="cc">CSS Test 01</h2>
+    <h2>CSS Test 01</h2>
+    <h2 id="id01">CSS Test 01</h2>
+
+    <h3>
+        <a href="">CSS Test 03</a>
+    </h3>
+    <h3><a href="">CSS Test 03</a></h3>
+    <h3><a href="">CSS Test 03</a></h3>
+    <h4><a href="">CSS Test 03</a></h4>
+    <h4><a href="">CSS Test 03</a></h4>
+</body>
+</html>

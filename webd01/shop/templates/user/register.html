@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--
+rid=id01&rpwd=pwd01&rage=30&r1=cr1
+Query String
+-->
+
+<body>
+    <h1>Register</h1>
+    <form action="register" method="get">
+        <fieldset>
+            <legend>Register Page</legend>
+
+            <input type="color" name="favcolor"><br>
+            <input type="date" name="regdate"><br>
+            <input type="range" name="points" min="0" max="10"><br>
+
+            <label for="id">ID</label>
+            <input type="text" name="rid" id="id"><br>
+            <label for="pwd">PWD</label>
+            <input type="password" name="rpwd" id="pwd"><br>
+            <label for="age">AGE</label>
+            <input type="number" name="rage" id="age"><br>
+            <p>직업</p>
+            <label for="job1">선생</label>
+            <input type="radio" name="r1" value="cr1" id="job1">
+            <label for="job2">교장</label>
+            <input type="radio" name="r1" value="cr2" id="job2">
+            <label for="job3">학생</label>
+            <input type="radio" name="r1" value="cr3" id="job3">
+            <p>취미</p>
+            <label for="h1">공부</label>
+            <input type="checkbox" name="c1" value="ch1" id="h1">
+            <label for="h2">운동</label>
+            <input type="checkbox" name="c1" value="ch2" id="h2">
+            <label for="h3">독서</label>
+            <input type="checkbox" name="c1" value="ch3" id="h3">
+
+            <p>자기소개</p>
+            <textarea rows="10" cols="50" name="tt"></textarea>
+
+            <p>전화번호</p>
+            <select name="p">
+                <option value="skt">SKT</option>
+                <option value="kt">KT</option>
+                <option value="lgt">LGT</option>
+            </select>
+            <br>
+            <input type="hidden" name="loginid" value="user01" >
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

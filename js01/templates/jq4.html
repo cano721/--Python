@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        div{
+            width:400px;
+            border:3px solid red;
+        }
+        .mycss{
+            color:yellow;
+            background:black;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+        $('button').eq(0).click(function(){
+            $('div').append('<h2>Append</h2>');
+        });
+        $('button').eq(1).click(function(){
+            $('div').prepend('<h2>Prepend</h2>');
+        });
+        $('button').eq(2).click(function(){
+            $('div').after('<h2>After</h2>');
+        });
+        $('button').eq(3).click(function(){
+            $('div').before('<h2>Before</h2>');
+        });
+        $('button').eq(4).click(function(){
+            $('div').remove();
+        });
+        $('button').eq(5).click(function(){
+            $('div').empty();
+        });
+        $('button').eq(6).click(function(){
+            $('h1').addClass('mycss');
+        });
+        $('button').eq(7).click(function(){
+            $('h1').removeClass('mycss');
+        });
+    });
+    </script>
+</head>
+<body>
+<button>Append</button>
+<button>Prepend</button>
+<button>After</button>
+<button>Before</button>
+<button>Remove</button>
+<button>Empty</button>
+<div></div>
+<button>CSS ON</button>
+<button>CSS OFF</button>
+<h1>Header1</h1>
+</body>
+</html>

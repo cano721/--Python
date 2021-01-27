@@ -16,4 +16,4 @@ class Car:
         return self.__id, self.__name, self.__fsize, self.__cfsize, self.__serial
 
     def setCfsize(self, size):
-        self.__cfsize += size
+        self.__cfsize += sizxe

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('input[name="id"]').focus();
+        $('#login_form > button').click(function(){
+            id = $('input[name="id"]').val();
+            pwd = $('input[name="pwd"]').val();
+            if(id == '' || id == null){
+                alert('ID is mandatory field...');
+                $('input[name="id"]').focus();
+                return;
+            };
+            if(pwd == '' || pwd == null){
+                alert('PWD is mandatory field...');
+                $('input[name="pwd"]').focus();
+                return;
+            };
+            $('#login_form').attr({
+                'action':'login',
+                'method':'get'
+            });
+            $('#login_form').submit();
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <form id="login_form">
+        ID<input type="text" name="id"><br>
+        PWD<input type="password" name="pwd"><br>
+        <button>LOGIN</button>
+    </form>
+</body>
+</html>

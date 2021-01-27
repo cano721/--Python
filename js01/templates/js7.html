@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function gonaver(){
+           var c = confirm('Go Naver....?');
+           if(c == true){
+                location.href='http://www.naver.com';
+           }else{
+                return;
+           };
+        };
+        function godaum(){
+           var c = confirm('Go Daum....?');
+           if(c == true){
+                location.href='http://www.daum.net';
+           }else{
+                return;
+           };
+        };
+
+
+    </script>
+</head>
+<body>
+    <a href="#" onclick="gonaver();">NAVER</a>
+    <button onclick="godaum();">DAUM</button>
+</body>
+</html>

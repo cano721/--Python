@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+    <style>
+        header > h1 > a{
+            color: white;
+        }
+    </style>
+    <header>
+        <h1><a href="{% url 'shop2' %}">Naningu.com</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'userlist' %}">User List</a></li>
+            <li><a href="{% url 'useradd' %}">User Add</a></li>
+            <li><a href="{% url 'itemlist' %}">Item List</a></li>
+            <li><a href="{% url 'itemadd' %}">Item Add</a></li>
+        </ul>
+    </nav>
+    <section>
+    {% if section == 'userlist' %}
+        {% include  "shop2/userlist.html" %}
+    {% elif section == 'useradd' %}
+        {% include  "shop2/useradd.html" %}
+    {% elif section == 'itemlist' %}
+        {% include  "shop2/itemlist.html" %}
+    {% elif section == 'itemadd' %}
+        {% include  "shop2/itemadd.html" %}
+    {% elif section == 'userdetail' %}
+        {% include  "shop2/userdetail.html" %}
+    {% else %}
+        {% include  "shop2/mainsection.html" %}
+    {% endif %}
+    </section>
+    <footer></footer>
+{% endblock %}
+
+
+
+
